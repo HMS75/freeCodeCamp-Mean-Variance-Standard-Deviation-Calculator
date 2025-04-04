@@ -1,5 +1,7 @@
 import numpy as np
 def calculate(lst):
+    if (len(lst)!=9):
+        raise ValueError("List must contain nine numbers.")
     arr = np.array(lst).reshape((3,3))
     res = {
         #find "statistic" of axis1, axis2, and flatten it.
